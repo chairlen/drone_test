@@ -6,9 +6,9 @@ pipeline:
 
    commands:
 
-     - echo 'build'
+     - echo 'build 123'
 
-     - echo 'test'
+     - echo 'test 123'
 
  telegram:
 
