@@ -6,9 +6,9 @@ pipeline:
 
    commands:
 
-     - npm install --silent
+     - echo 'build'
 
-     - npm test
+     - echo 'test'
 
  telegram:
 
