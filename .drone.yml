@@ -1,0 +1,31 @@
+pipeline:
+
+ build:
+
+   image: node:6.6.0
+
+   commands:
+
+     - npm install --silent
+
+     - npm test
+
+ telegram:
+
+   image: appleboy/drone-telegram
+
+   token: XXX:XXXXX
+
+   to: 337635385
+
+   message: >
+
+     {{#success build.status}}
+
+     主人，{{repo.owner}}/{{repo.name}}第{{build.number}}次构建成功！
+
+     {{else}}
+
+     主人，{{repo.owner}}/{{repo.name}}第{{build.number}}次构建失败了，快来修理下吧。
+
+     {{/success}}
