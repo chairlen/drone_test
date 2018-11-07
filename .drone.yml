@@ -8,7 +8,7 @@ pipeline:
 
      - echo 'build 123'
 
-     - echo 'test 1234'
+     - echo 'test 123456'
 
  telegram:
 
